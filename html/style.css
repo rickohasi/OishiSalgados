@@ -1,0 +1,126 @@
+
+.titulo {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;  
+    font-style: normal;
+}
+
+
+
+.foto-perfil {
+    max-width: 45px;   
+    max-height: 45px;  
+    width: auto;        
+    height: auto;       
+    border-radius: 50%; 
+    position: absolute;
+    left: 1250px;
+    top: 50px;
+}
+
+
+body {
+    margin: 0;
+    font-family: "Playfair Display", serif;
+    background-image: url('mockup-fotor-20241204102251.png');
+    background-size: cover;  
+    background-position: center;  
+    background-attachment: fixed;  
+}
+
+.titulo-foto {
+    width: 15%; 
+    max-width: 500px;
+    margin: 10px auto;  
+    display: block;
+}
+
+.social-foto{
+    position: absolute;
+    left: 700px;
+    top: 450px;
+    width: 150px;
+}
+
+.foto-principal-container {
+    text-align: center; 
+    margin-top: 80px;   
+}
+
+.foto-principal {
+    width: 70%;         
+    max-width: 1200px; 
+    height: auto;       
+    margin: 20px auto;  
+    display: block;
+    border-radius: 10px;
+}
+
+.subtitulos-container {
+    display: flex;           
+    justify-content: center; 
+    gap: 20px;               
+    margin-top: 20px;        
+}
+
+.subtitulos-1, .subtitulos-2, .subtitulos-3 {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 900;  
+    font-style: normal;
+    color: darkorange;
+    text-align: center; 
+    padding: 10px 20px;  
+    border: 50px solid rgba(255, 0, 0, 0); 
+    border-radius: 5px;  
+    text-decoration: none; 
+    position: absolute;
+    top: 150px;
+    font-size: 25px;
+}
+
+@media (max-width: 768px) {
+    .subtitulos-container {
+        flex-direction: column; 
+        align-items: center;   
+    }
+
+    .subtitulos-1, .subtitulos-2, .subtitulos-3 {
+        width: 90%; 
+    }
+}
+
+.merxan-txt {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 900;  
+    font-style: normal;
+    color: #e9ab82;
+    text-align: center; 
+    padding: 10px 20px;   
+    border-radius: 5px;  
+    text-decoration: none; 
+    position: absolute;
+    top: 650px;
+    left: 0px;
+    font-size: 30px;
+    padding-right: 800px; 
+    margin-left: 20px; 
+}
+
+.encomende{
+    font-family: "DM Sans", sans-serif;
+    font-weight: 900;  
+    font-style: normal;
+    color: #e9ab82;
+    text-align: center; 
+    padding: 10px 20px;  
+    border: 10px solid rgba(250, 0, 0, 0); 
+    border-radius: 30px;  
+    text-decoration: none; 
+    position: absolute;
+    left: 475px;
+    top: 470px;
+    font-size: 25px;
+    background-color: limegreen;
+}
+
