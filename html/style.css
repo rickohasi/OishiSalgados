@@ -116,10 +116,8 @@ body {
     padding: 10px 20px;  
     border: 10px solid rgba(250, 0, 0, 0); 
     border-radius: 30px;  
-    text-decoration: none; 
-    position: absolute;
-    left: 475px;
-    top: 470px;
+    text-decoration: none;
+    
     font-size: 25px;
     background-color: limegreen;
 }
