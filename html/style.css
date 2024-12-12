@@ -1,124 +1,122 @@
+* {
 
-.titulo {
-    font-family: "Playfair Display", serif;
-    font-optical-sizing: auto;
-    font-weight: 700;  
-    font-style: normal;
-}
-
-
-
-.foto-perfil {
-    max-width: 45px;   
-    max-height: 45px;  
-    width: auto;        
-    height: auto;       
-    border-radius: 50%; 
-    position: absolute;
-    left: 1250px;
-    top: 50px;
-}
-
-
-body {
     margin: 0;
-    font-family: "Playfair Display", serif;
-    background-image: url('mockup-fotor-20241204102251.png');
-    background-size: cover;  
-    background-position: center;  
-    background-attachment: fixed;  
+    padding: 0;
+
 }
 
-.titulo-foto {
-    width: 15%; 
-    max-width: 500px;
-    margin: 10px auto;  
-    display: block;
+.cabecalho-pag1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
 }
 
-.social-foto{
-    position: absolute;
-    left: 700px;
-    top: 450px;
-    width: 150px;
+.logo {
+    display: flex;   
+    align-items: center;
+    color: #F34848;
+    font-family: REM;
+    font-weight: bold;
 }
 
-.foto-principal-container {
-    text-align: center; 
-    margin-top: 80px;   
+.logo p {
+    width: 10px;
 }
 
-.foto-principal {
-    width: 70%;         
-    max-width: 1200px; 
-    height: auto;       
-    margin: 20px auto;  
-    display: block;
-    border-radius: 10px;
-}
-
-.subtitulos-container {
-    display: flex;           
-    justify-content: center; 
-    gap: 20px;               
-    margin-top: 20px;        
-}
-
-.subtitulos-1, .subtitulos-2, .subtitulos-3 {
-    font-family: "DM Sans", sans-serif;
-    font-weight: 900;  
-    font-style: normal;
-    color: darkorange;
-    text-align: center; 
-    padding: 10px 20px;  
-    border: 50px solid rgba(255, 0, 0, 0); 
-    border-radius: 5px;  
-    text-decoration: none; 
-    position: absolute;
-    top: 150px;
-    font-size: 25px;
-}
-
-@media (max-width: 768px) {
-    .subtitulos-container {
-        flex-direction: column; 
-        align-items: center;   
-    }
-
-    .subtitulos-1, .subtitulos-2, .subtitulos-3 {
-        width: 90%; 
-    }
-}
-
-.merxan-txt {
-    font-family: "DM Sans", sans-serif;
-    font-weight: 900;  
-    font-style: normal;
-    color: #e9ab82;
-    text-align: center; 
-    padding: 10px 20px;   
-    border-radius: 5px;  
-    text-decoration: none; 
-    position: absolute;
-    top: 650px;
-    left: 0px;
-    font-size: 30px;
-    padding-right: 800px; 
-    margin-left: 20px; 
-}
-
-.encomende{
-    font-family: "DM Sans", sans-serif;
-    font-weight: 900;  
-    font-style: normal;
-    color: #e9ab82;
-    text-align: center; 
-    padding: 10px 20px;  
-    border: 10px solid rgba(250, 0, 0, 0); 
-    border-radius: 30px;  
+.links a {
+    color: #F34848;
+    font-family: REM;
+    font-weight: bold;
     text-decoration: none;
-    
-    font-size: 25px;
-    background-color: limegreen;
+    padding: 20px;
 }
 
+.links a:hover {
+
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+.merchan {
+    background-image: url(/html/assets/unsplash_hrlvr2ZlUNk.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    color: #F34848;
+}
+
+.quadrado-merchan {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 500px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 24px;
+}
+
+.conteudo-quadrado-merchan {
+    font-family: REM;
+    width: 400px;
+    margin: 0 auto;
+    padding: 60px 0px;
+    gap: 50px;
+}
+
+.conteudo-quadrado-merchan p {
+    color: rgba(0, 0, 0, 0.692);
+}
+
+.conteudo-quadrado-merchan > *:not(:last-child) { 
+    margin-bottom: 30px; /* Ajuste o valor conforme necessário */ 
+}
+
+.conteudo-quadrado-merchan a {
+    background-color: white;
+    color: #F24434;
+    transition: 0.5s;
+    border: 1px solid #F24434;
+    border-radius: 24px;
+    padding: 13px;
+    text-decoration: none;
+}
+
+.conteudo-quadrado-merchan a:hover {
+    background-color: #F24434;
+    color: white;
+    font-family: REM;
+}
+
+
+@media (max-width:980px) {
+
+    .quadrado-merchan {
+        text-align: center;
+        width: 400px;
+        height: 350px;
+        margin: 0 auto;
+        background-color: white;
+        border-radius: 10px;
+    }
+
+    .merchan {
+
+        background-image: url(/html/assets/unsplash_hrlvr2ZlUNk.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 400px;
+
+    }
+
+    .conteudo-quadrado-merchan {
+        width: 300px;
+    }
+
+    .conteudo-quadrado-merchan > *:not(:last-child) { 
+        margin-bottom: 23px; /* Ajuste o valor conforme necessário */ 
+    }
+
+}
